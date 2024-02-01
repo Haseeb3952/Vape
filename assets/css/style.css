@@ -49,6 +49,114 @@ body {
   border-radius: 10px;
 }
 
+.product-section {
+  position: relative;
+}
+
+.red-circle {
+  position: absolute;
+  left: 1110px;
+  top: -5px;
+  z-index: -1;
+}
+
+.red-circle-2 {
+  position: absolute;
+  right: 1110px;
+  top: 655px;
+  z-index: -1;
+}
+
+.man-vaping {
+  height: 425px;
+  width: 500px;
+  position: relative;
+}
+
+.man-vaping img {
+  height: 425px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.border-box {
+  position: absolute;
+  height: 425px;
+  width: 500px;
+  border: 2px solid #ffffff;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  z-index: -2;
+}
+
+.favourite-section {
+  background-image: url(/assets/images/gradient-smoke-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.favourite-vape {
+  height: 300px;
+  width: 300px;
+}
+
+.favourite-vape img {
+  height: 300px;
+  width: 300px;
+}
+
+.new-item-box {
+  border-radius: 10px;
+}
+
+.new-arrival {
+  height: 200px;
+  width: 100%;
+}
+
+.new-arrival img {
+  height: 200px;
+  width: 100%;
+}
+
+.client-boxes {
+  margin: 50px 0px;
+}
+
+.client-box {
+  border-radius: 10px;
+}
+
+.client-box-1 {
+  border-radius: 10px;
+}
+
+.client-image {
+  height: 200px;
+  width: 200px;
+  margin-top: -80px;
+  margin-bottom: 10px;
+}
+
+.client-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.newsletter-picture img {
+  height: 300px;
+  width: 300px;
+}
+
+.social-icon img {
+  height: 20px;
+  width: 20px;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }
@@ -61,6 +169,40 @@ body {
 
   .stylish-text h1 {
     font-size: 38.79px;
+  }
+  .man-vaping {
+    height: 330px;
+    width: 330px;
+  }
+
+  .man-vaping img {
+    height: 330px;
+    width: 330px;
+  }
+
+  .border-box {
+    height: 330px;
+    width: 330px;
+  }
+
+  .favourite-section {
+    height: 400px;
+  }
+  .favourite-vape {
+    height: 200px;
+    width: 200px;
+  }
+
+  .favourite-vape img {
+    height: 200px;
+    width: 200px;
+  }
+  .client-box {
+    border-radius: 10px;
+    margin: 25px 0px;
+  }
+  .client-box-1 {
+    margin-bottom: 30px;
   }
 }
 
