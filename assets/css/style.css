@@ -182,7 +182,11 @@ p {
   .stylish-text h1 {
     font-size: 38.79px;
   }
- 
+  .man-vaping {
+    height: 425px;
+    width: 100%;
+    position: relative;
+  }
 
   .man-vaping img {
     height: 330px;
