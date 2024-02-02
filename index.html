@@ -13,12 +13,14 @@
       crossorigin="anonymous"
     />
 
+    <!-------------------------------------------- Font Awesome CDN ----------------------------------->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!-------------------------------------------- Slik Slider CDN ------------------------------------------->
+    <!-------------------------------------------- Slik Slider CDN ------------------------------------>
 
     <link
       rel="stylesheet"
@@ -117,7 +119,7 @@
               </button>
               <div class="d-flex gap-3">
                 <div>
-                  <a href="#" class="navbar-icon"
+                  <a href="/register.html" class="navbar-icon"
                     ><img
                       src="/assets/images/user-icon.svg"
                       class="img-fluid"
@@ -148,15 +150,31 @@
     </section>
     <!------------------------------------- Navbar Section Ended --------------------------------------->
 
+    <!------------------------------------- Navbar Section Ended --------------------------------------->
+
+    <div class="age-verification">
+      <div class="age-verification-content">
+        <p class="pt-2 m-0">
+          The products available on VapeDash are
+          <b>
+            age-restricted and intended for adults of legal smoking age only
+          </b>
+        </p>
+        <h5 class="text-red fw-bold pt-2">Are you sure you are 18+</h5>
+        <button onclick="verifyAge()">Yes</button>
+        <button onclick="closeWebsite()">No</button>
+      </div>
+    </div>
+
+    <!------------------------------------- Navbar Section Ended --------------------------------------->
+
     <!------------------------------------- Hero Section Started --------------------------------------->
 
     <section>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
-            <p class="text-white text-center m-0">
-              Upgrade Your Lifestyle
-            </p>
+            <p class="text-white text-center m-0">Upgrade Your Lifestyle</p>
             <h1 class="text-danger fw-bold text-center large-text m-0">
               Quit Smoking
             </h1>
@@ -238,7 +256,7 @@
                   <h4 class="fw-bold text-white">$ 09.99</h4>
                   <button
                     type="button"
-                    class="btn rounded rounded-pill custom-btn text-white "
+                    class="btn rounded rounded-pill custom-btn text-white"
                   >
                     Shop Now
                   </button>
@@ -310,7 +328,6 @@
               </div>
             </div>
           </div>
-        
 
           <div class="col-12 col-lg-3 col-md-6 order-lg-1 order-0">
             <div class="product-card p-4">
@@ -624,7 +641,9 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="d-flex justify-content-center align-items-center">
-              <div class="favourite-vape d-flex justify-content-center align-items-center">
+              <div
+                class="favourite-vape d-flex justify-content-center align-items-center"
+              >
                 <img
                   src="/assets/images/favourite-vape.svg"
                   class="img-fluid"
@@ -1098,6 +1117,10 @@
 
     <!-------------------------------------- Footer Section Ended ------------------------------------->
 
+    <!-------------------------------------- Footer Section Ended ------------------------------------->
+
+    <script src="/assets/script/myScript.js"></script>
+
     <!-- Slick SLider -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
@@ -1128,7 +1151,7 @@
               slidesToScroll: 3,
               infinite: true,
               dots: true,
-             arrows: false,
+              arrows: false,
             },
           },
           {
@@ -1152,9 +1175,6 @@
           // instead of a settings object
         ],
       });
-
-
-  
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->

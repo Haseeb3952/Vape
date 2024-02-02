@@ -30,6 +30,7 @@ p {
   height: 20px;
   width: 20px;
 }
+
 .custom-btn {
   background-color: var(--red-color);
 }
@@ -169,9 +170,90 @@ p {
   height: 20px;
   width: 20px;
 }
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+
+
+/* Sign In Page CSS */
+
+.sign-in-bg {
+  background-image: url('/assets/images/signin-bg.png');
+  height: 100vh;
+  background-size: cover;
 }
+
+.name-shadow:focus-visible {
+  box-shadow: none;
+}
+
+.sign-in-blur-bg {
+  /* From https://css.glass */
+background: rgba(180, 180, 180, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.9px);
+-webkit-backdrop-filter: blur(3.9px);
+}
+
+.age-verification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 62, 62, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+.age-verification-content {
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.3px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.age-verification p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7rem;
+}
+
+.age-verification button {
+  padding: 10px 35px;
+  margin: 5px 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.age-verification button:hover {
+  background-color: #45a049;
+}
+
+.age-verification button:last-child {
+  background-color: #f44336;
+}
+
+.age-verification button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -182,6 +264,7 @@ p {
   .stylish-text h1 {
     font-size: 38.79px;
   }
+
   .man-vaping {
     height: 425px;
     width: 100%;
@@ -210,12 +293,17 @@ p {
   .client-boxes {
     margin: 30px 0px;
   }
+
   .client-box {
     border-radius: 10px;
     margin: 25px 0px;
   }
+
   .client-box-1 {
     margin-bottom: 30px;
+  }
+  .age-verification-content {
+    width: 80%;
   }
 }
 
@@ -224,35 +312,36 @@ p {
   .large-text {
     font-size: 41.09px;
   }
+
   .stylish-text h1 {
     font-size: 33.21px;
   }
-
 
   .man-vaping img {
     height: 330px;
     width: 330px;
   }
+
   .border-box {
     height: 330px;
     width: 330px;
   }
+
   .client-box {
     border-radius: 10px;
     margin: 50px 0px;
   }
+
   .client-box-1 {
     margin: 50px 0px;
   }
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-}
+@media (max-width: 1199.98px) {}
 
 /* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-}
+@media (max-width: 1399.98px) {}
 
 @media (min-width: 767.98px) {
   .divider {
