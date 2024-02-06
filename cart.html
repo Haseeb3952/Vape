@@ -84,8 +84,16 @@
                       </button>
                     </div>
                   </td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">
@@ -133,8 +141,16 @@
                       </button>
                     </div>
                   </td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">
@@ -182,18 +198,32 @@
                       </button>
                     </div>
                   </td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
-                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
+                  <td>
+                    <h6 class="text-white fw-bold custom-price-size">
+                      09.99 $
+                    </h6>
+                  </td>
                 </tr>
               </tbody>
-             
             </table>
             <div class="pb-3">
-                <a href="/index.html" class="text-red text-decoration-none d-flex gap-3 align-items-center">
-                    <img src="/assets/images/back-arrow.svg" class="img-fluid" alt="">
-                    <p class="text-red mb-0">Continue Shopping</p>
-                </a>
-              </div>
+              <a
+                href="/index.html"
+                class="text-red text-decoration-none d-flex gap-3 align-items-center"
+              >
+                <img
+                  src="/assets/images/back-arrow.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <p class="text-red mb-0">Continue Shopping</p>
+              </a>
+            </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="bg-custom-dark p-4">
@@ -263,6 +293,8 @@
               <div class="d-flex justify-content-center mt-lg-3 mt-4">
                 <button
                   type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   class="btn rounded rounded-pill custom-btn text-white w-100"
                 >
                   Checkout
@@ -273,6 +305,102 @@
         </div>
       </div>
     </section>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent">
+          <div class="sign-in-blur-bg p-4">
+            <div class="d-flex justify-content-between">
+              <div><h6 class="text-white fw-bold">Payment Method</h6></div>
+              <!-- <div>
+                <a
+                  href="#"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  >
+                  <img src="/assets/images/cross.svg" class="cross-image" alt="">
+                </a>
+              </div> -->
+            </div>
+
+            <div class="border border-1 rounded-pill my-3">
+              <div class="dropdown standard-btn">
+                <button
+                  class="btn text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cash on Delivery (COD)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">Credit/Debit Card</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cryptocurrencies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">E-wallets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6 class="fw-bold text-white pt-4">Receiver Name</h6>
+            <div class="border border-1 rounded-pill my-2 promo">
+              <input
+                  type="text"
+                  class="form-control bg-transparent border-0 text-white"
+                  placeholder="Abdul Haseeb"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              <!-- <h6 class="text-secondary mb-0 px-3 py-2">Abdul Haseeb</h6> -->
+            </div>
+            <h6 class="fw-bold text-white pt-4">Shipping Address</h6>
+            <div class="">
+              <textarea
+                name=""
+                class="form-control bg-transparent text-secondary my-2"
+                id=""
+                cols="10"
+                rows="3"
+              >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </textarea
+              >
+            </div>
+            <div class="d-flex justify-content-center my-3">
+              <button
+                type="button"
+                class="btn rounded rounded-pill custom-btn text-white w-100"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="/assets/script/myScript.js"></script>
 
