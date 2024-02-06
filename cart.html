@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!---------------------------------------- Custom CSS Link ----------------------------------------->
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 pt-4">
+            <div class="d-flex justify-content-between">
+              <h4 class="fw-bold text-white">Shopping Cart</h4>
+              <h4 class="fw-bold text-white">4 items</h4>
+            </div>
+            <hr class="text-white" />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-secondary">Product Details</th>
+                  <th scope="col" class="text-secondary ps-4">Quantity</th>
+                  <th scope="col" class="text-secondary ps-3">Price</th>
+                  <th scope="col" class="text-secondary ps-3">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex gap-2">
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <div class="product-image bg-danger">
+                          <img
+                            src="/assets/images/electronic-cigarette-watt-vaporizer-vape.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="text-white fw-bold pt-3 product-name">
+                          Product Name
+                        </h4>
+                        <p class="text-white fw-light mb-0 py-3 mobile-hidden">
+                          Lorem, ipsum dolor.
+                        </p>
+                        <a href="#" class="text-decoration-none">
+                          <p class="text-secondary">Remove</p>
+                        </a>
+                      </div>
+                    </div>
+                  </th>
+                  <td>
+                    <div class="counter-container">
+                      <button
+                        id="minus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(-1)"
+                      >
+                        -
+                      </button>
+                      <div id="display" class="digit fw-bold">0</div>
+                      <button
+                        id="plus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(1)"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex gap-2">
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <div class="product-image bg-danger">
+                          <img
+                            src="/assets/images/electronic-cigarette-watt-vaporizer-vape.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="text-white fw-bold pt-3 product-name">
+                          Product Name
+                        </h4>
+                        <p class="text-white fw-light mb-0 py-3 mobile-hidden">
+                          Lorem, ipsum dolor.
+                        </p>
+                        <a href="#" class="text-decoration-none">
+                          <p class="text-secondary">Remove</p>
+                        </a>
+                      </div>
+                    </div>
+                  </th>
+                  <td>
+                    <div class="counter-container">
+                      <button
+                        id="minus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(-1)"
+                      >
+                        -
+                      </button>
+                      <div id="display" class="digit fw-bold">0</div>
+                      <button
+                        id="plus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(1)"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex gap-2">
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <div class="product-image bg-danger">
+                          <img
+                            src="/assets/images/electronic-cigarette-watt-vaporizer-vape.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 class="text-white fw-bold pt-3 product-name">
+                          Product Name
+                        </h4>
+                        <p class="text-white fw-light mb-0 py-3 mobile-hidden">
+                          Lorem, ipsum dolor.
+                        </p>
+                        <a href="#" class="text-decoration-none">
+                          <p class="text-secondary">Remove</p>
+                        </a>
+                      </div>
+                    </div>
+                  </th>
+                  <td>
+                    <div class="counter-container">
+                      <button
+                        id="minus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(-1)"
+                      >
+                        -
+                      </button>
+                      <div id="display" class="digit fw-bold">0</div>
+                      <button
+                        id="plus"
+                        class="counter-button bg-transparent text-red border border-0"
+                        onclick="updateValue(1)"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                  <td><h6 class="text-white fw-bold custom-price-size">09.99 $</h6></td>
+                </tr>
+              </tbody>
+             
+            </table>
+            <div class="pb-3">
+                <a href="/index.html" class="text-red text-decoration-none d-flex gap-3 align-items-center">
+                    <img src="/assets/images/back-arrow.svg" class="img-fluid" alt="">
+                    <p class="text-red mb-0">Continue Shopping</p>
+                </a>
+              </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="bg-custom-dark p-4">
+              <h4 class="fw-bold text-white">Order Summary</h4>
+              <hr class="text-white my-4" />
+              <div class="d-flex justify-content-between">
+                <div><h6 class="text-white fw-bold">Items 3</h6></div>
+                <div><h6 class="text-white fw-bold">35.99 $</h6></div>
+              </div>
+              <h6 class="fw-bold text-white pt-4">Shipping</h6>
+              <div class="border border-1 rounded-pill my-3">
+                <div class="dropdown standard-btn">
+                  <button
+                    class="btn text-white dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Standard Delivery - 05.00 $
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Express Delivery - 05.00 $</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >International Delivery - 15.00 $</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Same-Day Delivery - 20.00 $</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h6 class="fw-bold text-white pt-4">Promo Code</h6>
+              <div class="border border-1 rounded-pill my-3 promo">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0 text-white"
+                  placeholder="Enter Your Promo Code"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mt-lg-4 mt-4">
+                <button
+                  type="button"
+                  class="btn rounded rounded-pill bg-white text-dark px-4"
+                >
+                  Apply
+                </button>
+              </div>
+              <hr class="text-white my-4" />
+              <div class="d-flex justify-content-between">
+                <h6 class="text-white">Total Cost</h6>
+                <h6 class="text-white">40.99 $</h6>
+              </div>
+              <div class="d-flex justify-content-center mt-lg-3 mt-4">
+                <button
+                  type="button"
+                  class="btn rounded rounded-pill custom-btn text-white w-100"
+                >
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/assets/script/myScript.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

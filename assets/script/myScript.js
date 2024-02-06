@@ -15,3 +15,13 @@ function closeWebsite() {
   // Close the website
   window.close();
 }
+
+
+// Counter Button 
+
+let currentValue = 0;
+
+function updateValue(amount) {
+  currentValue += amount;
+  document.getElementById('display').innerText = currentValue;
+}
