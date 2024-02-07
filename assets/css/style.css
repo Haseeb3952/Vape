@@ -427,10 +427,10 @@ tr {
   .custom-price-size {
     font-size: 12px;
   }
-  .product-picture {
+  /* .product-picture {
     height: 100px;
     width: 100px;
-  }
+  } */
   .profile-picture {
     height: 350px;
     width: 350px;
