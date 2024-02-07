@@ -31,6 +31,18 @@ p {
   width: 20px;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: var(--red-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--white-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--red-color);
+}
+
 .user-modal .btn:focus {
   outline: 0;
   box-shadow: none;
