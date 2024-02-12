@@ -37,6 +37,7 @@ p {
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--white-color);
+  transition: 0.4s;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -446,6 +447,9 @@ tr {
   .profile-picture {
     height: 350px;
     width: 350px;
+  }
+  .bg-custom-dark {
+    height: max-content;
   }
 }
 
