@@ -73,14 +73,14 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link text-white px-lg-4 px-0"
+                    class="nav-link px-lg-4 px-0"
                     aria-current="page"
                     href="#"
                     >Shop</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a class="nav-link" aria-current="page" href="#"
                     >Contact</a
                   >
                 </li>
@@ -158,7 +158,7 @@
 
     <!----------------------------------- Age Verification Started ------------------------------------->
 
-    <div class="age-verification">
+    <!-- <div class="age-verification">
       <div class="age-verification-content">
         <p class="pt-2 m-0">
           The products available on VapeDash are
@@ -170,7 +170,7 @@
         <button onclick="verifyAge()">Yes</button>
         <button onclick="closeWebsite()">No</button>
       </div>
-    </div>
+    </div> -->
 
     <!----------------------------------- Age Verification Ended --------------------------------------->
 
@@ -212,773 +212,716 @@
 
     <!-------------------------------------- Hero Section Ended ---------------------------------------->
 
-    <!--------------------------------- Our Product Section Started ------------------------------------>
+    
+        <!--------------------------------------- Filter Section Started ----------------------------------->
 
-    <section class="product-section">
-      <div class="container">
-        <h3 class="text-white text-center fw-bold pb-4">Our Products</h3>
-        <div class="row gy-4">
-          <div class="col-12 col-lg-3 col-md-6">
-           <a href="/product.html" class="text-decoration-none">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-7">
-                  <h5 class="fw-bold text-white">
-                    Product <span class="divider"></span>Name
-                  </h5>
-                  <p class="text-secondary pt-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  </p>
-                  <h4 class="fw-bold text-white">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
+        <section>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-12 col-lg-3">
+                <div class="filter-bg">
+                  <p class="text-center text-white py-3 m-0">Search Filters</p>
                 </div>
-
-                <div class="col-5">
-                  <div class="product-picture">
-                    <img
-                      src="/assets/images/vape.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
+                <div class="bg-dark px-2 py-2">
+                  <div
+                    class="d-flex py-2 bg-dark border border-1 rounded-pill shadow align-items-center justify-content-between px-3 filter-input border-2 rounded-3"
+                  >
+                    <div>
+                      <div class="filter-name">
+                        <input
+                          type="text"
+                          class="form-control text-white border-0 bg-transparent p-0"
+                          placeholder="Search by name"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <img
+                          src="/assets/images/Search-icon-blue.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </div>
                   </div>
+    
+                  <p class="pt-2 pb-1 m-0 text-white">Price (PKR)</p>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="price-input">
+                        <input
+                          type="text"
+                          class="form-control rounded-pill text-white bg-dark"
+                          placeholder="25,000"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price-input">
+                        <input
+                          type="text"
+                          class="form-control rounded-pill text-white bg-dark text-end"
+                          placeholder="70,000"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="range" name="" id="" class="w-100 my-2" />
+                    </div>
+                    <div class="col-6">
+                      <input type="range" name="" id="" class="w-100 my-2" />
+                    </div>
+                  </div>
+                  <p class="pb-1 m-0 text-white">Flavor Type</p>
+                  <div class="row">
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn btn-secondary rounded-pill text-white bg-transparent text-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Fruity
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Dessert
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Tobacco
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Beverage
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn btn-secondary rounded-pill text-white bg-transparent text-dark dropdown-toggle w-100 text-start"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                       Bottle Size
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              30ml
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              120ml
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Larger sizes
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="pb-1 pt-2 m-0 text-white">Nicotine Strength</p>
+                   
+                  <div class="row my-2">
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn small-size-texts btn-secondary rounded-pill bg-transparent text-white dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Nicotine-free
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Low (3mg-6mg)
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Medium (9mg-12mg)
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High (18mg-24mg)
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn btn-secondary rounded-pill text-white bg-transparent text-dark dropdown-toggle w-100 text-start"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        VG/PG Ratio
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High VG (for bigger vapor clouds)
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Balanced VG/PG
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High PG (for a stronger throat hit)
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row my-2">
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn btn-secondary rounded-pill text-white bg-transparent text-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Sweet Level
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Low
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Medium
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="dropdown small-size-text">
+                        <button
+                          class="btn btn-secondary rounded-pill text-white bg-transparent text-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenu2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Packing Type
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Bottles
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Chubby Gorilla bottles
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Dropper bottles
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                   
+                  </div>
+                   
                 </div>
               </div>
-            </div>
-           </a>
-          </div>
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-7">
-                  <h5 class="fw-bold text-white">
-                    Product <span class="divider"></span>Name
-                  </h5>
-                  <p class="text-secondary pt-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  </p>
-                  <h4 class="fw-bold text-white">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-
-                <div class="col-5">
-                  <img src="/assets/images/vape.svg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                  <h4 class="fw-bold text-white">Product Name</h4>
-                  <p class="text-secondary pt-2 m-0">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero. sed diam
-                    voluptua. At vero.
-                  </p>
-                  <h4 class="fw-bold text-white pt-2">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-
-                <div class="col-12 col-lg-5 col-md-5">
-                  <img
-                    src="/assets/images/vape-product-2.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 order-lg-0 order-1">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
-                  <h4 class="fw-bold text-white">Product Name</h4>
-                  <p class="text-secondary pt-2 m-0">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero. sed diam
-                    voluptua. At vero.
-                  </p>
-                  <h4 class="fw-bold text-white pt-2">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-
-                <div class="col-12 col-lg-5 col-md-5 pt-md-0 pt-3">
-                  <img
-                    src="/assets/images/vape-product-3.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-3 col-md-6 order-lg-1 order-0">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-7">
-                  <h5 class="fw-bold text-white">
-                    Product <span class="divider"></span>Name
-                  </h5>
-                  <p class="text-secondary pt-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  </p>
-                  <h4 class="fw-bold text-white">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-
-                <div class="col-5">
-                  <img src="/assets/images/vape.svg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="product-card p-4">
-              <div class="row align-items-center">
-                <div class="col-7">
-                  <h5 class="fw-bold text-white">
-                    Product <span class="divider"></span>Name
-                  </h5>
-                  <p class="text-secondary pt-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  </p>
-                  <h4 class="fw-bold text-white">$ 09.99</h4>
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-
-                <div class="col-5">
-                  <img src="/assets/images/vape.svg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="red-circle">
-        <img src="/assets/images/red-circle.png" class="img-fluid" alt="" />
-      </div>
-      <div class="red-circle-2">
-        <img src="/assets/images/red-circle.png" class="img-fluid" alt="" />
-      </div>
-    </section>
-
-    <!---------------------------------- Our Product Section Ended ------------------------------------->
-
-    <!------------------------------------ About Section Started --------------------------------------->
-
-    <section class="my-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
-            <div class="man-vaping">
-              <img
-                src="/assets/images/man-vaping-electronic-cigarette.svg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="border-box"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div>
-              <h5 class="text-white fw-bold pt-md-4 pt-0">About Our</h5>
-              <h3 class="text-white fw-bold">Smoke Devices</h3>
-              <p class="text-secondary">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna
-              </p>
-              <button
-                type="button"
-                class="btn rounded rounded-pill custom-btn text-white px-4"
-              >
-                Shop Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!------------------------------------- About Section Ended ---------------------------------------->
-
-    <!-------------------------------- New Arrivals Section Started ------------------------------------>
-
-    <section class="pb-5 px-2">
-      <div class="container">
-        <h3 class="text-white text-center fw-bold py-4">New Arrivals</h3>
-        <div class="row slider">
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
+    
+              <!---------------------------------------- Filter Section Ended ------------------------------>
+    
+              <!----------------------------------------- Ads Section Started ------------------------------>
+    
+              <div class="col-12 col-lg-9">
                 <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
+                  class="d-flex justify-content-between align-items-center my-2"
                 >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <div>
+                    <h2 class="fw-bold text-white">Latest Vapes</h2>
+                  </div>
+                  <a href="#" class="text-decoration-none">
+                    <div class="bg-results px-3 py-1 rounded-3 price-heading">
+                      200 Results
+                    </div>
+                  </a>
                 </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------------------------------- New Arrivals Section Ended ------------------------------------>
-
-    <!---------------------------------- Favourite Section Started ------------------------------------->
-
-    <section class="favourite-section">
-      <div class="container">
-        <div class="row d-flex justify-content-center align-items-center pt-4">
-          <div class="col-12 col-md-6">
-            <h1
-              class="fw-bold text-white lh-base px-md-5 px-0 text-md-start text-center pt-md-0 pt-3"
-            >
-              Buy your <span class="divider"></span> favorite vape
-              <span class="divider"></span> in best Prices
-            </h1>
-            <div class="text-md-start text-center">
-              <button
-                type="button"
-                class="btn rounded rounded-pill custom-btn text-white px-4 ms-md-5 ms-0"
-              >
-                Shop Now
-              </button>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="d-flex justify-content-center align-items-center">
-              <div
-                class="favourite-vape d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="/assets/images/favourite-vape.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!------------------------------------ Favourite Section Ended ------------------------------------->
-
-    <!-------------------------------- Featured Product Section Started -------------------------------->
-
-    <section class="py-5 px-2">
-      <div class="container">
-        <h3 class="text-white text-center fw-bold pb-4">Featured Product</h3>
-        <div class="row slider">
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="item">
-              <div class="bg-white new-item-box p-3 mx-md-1 mx-0">
-                <div
-                  class="new-arrival d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    src="/assets/images/new-arrivals.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4 class="fw-bold text-center">Product Name</h4>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                </p>
-                <h3 class="text-center">09.99 $</h3>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn rounded rounded-pill custom-btn text-white px-4"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------- Featured Product Section Ended -------------------------------->
-
-    <!---------------------------------- Testimonials Section Started --------------------------------->
-
-    <section>
-      <div class="container">
-        <h3 class="text-white text-center fw-bold pb-lg-4 pb-0">
-          What Our Client Say
-        </h3>
-        <div class="row client-boxes gy-2">
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="client-box-1 bg-white p-3 text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="client-image">
-                  <img
-                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=900&t=st=1706786002~exp=1706786602~hmac=eaaa7d147eca8e92d1441d6b2dd694104c78c2b95bba89eb339ab3099c938a43"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At
-              </p>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="client-box bg-white p-3 text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="client-image">
-                  <img
-                    src="https://img.freepik.com/free-photo/smiling-happy-woman-wearing-denim-jacket-white-shirt_176532-10378.jpg?w=900&t=st=1706786264~exp=1706786864~hmac=b0fadfc13990ed9de2a8fc3a0b4811d5661cf9d3f51acba0e949e2e7ef3fd6f0"
-                    class="img-fluid"
-                    alt=""
-                  />
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-light-black rounded-3">
+                    <li class="breadcrumb-item">
+                      <div class="d-flex align-items-center p-1">
+                        <div>
+                          <a href="#"
+                            ><div class="dropdown">
+                              <a
+                                class="btn newly-listed dropdown-toggle text-white fw-bold"
+                                href="#"
+                                role="button"
+                                id="dropdownMenuLink"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Newly Listed
+                              </a>
+    
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuLink"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                  >
+                                </li>
+                              </ul>
+                            </div></a
+                          >
+                        </div>
+                        <div class="breadcrumb-line"></div>
+                        <div>
+                          <a href="#"
+                            ><div class="dropdown">
+                              <a
+                                class="btn newly-listed dropdown-toggle text-white fw-bold"
+                                href="#"
+                                role="button"
+                                id="dropdownMenuLink"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Sort By Price
+                              </a>
+    
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuLink"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                  >
+                                </li>
+                              </ul>
+                            </div></a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </nav>
+                <div class="row gy-4">
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-4 col-md-6 h-100">
+                    <div class="bg-light-black new-item-box p-3 mx-md-1 mx-0">
+                      <a href="/product.html" class="text-decoration-none text-dark">
+                      <div
+                        class="new-arrival d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="/assets/images/new-arrivals.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <h5 class="fw-bold text-center text-white">Product Name</h5>
+                     
+                      <h5 class="text-white text-center">09.99 $</h5>
+                      <div class="d-flex justify-content-center">
+                       <a href="/cart.html">
+                        <button
+                        type="button"
+                        class="btn rounded rounded-pill custom-btn text-white px-4"
+                      >
+                      Add to Cart       
+                    </button>
+                       </a>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+           
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At
-              </p>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
             </div>
           </div>
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="client-box bg-white p-3 text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="client-image">
-                  <img
-                    src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?w=740&t=st=1706786181~exp=1706786781~hmac=c84c38022b7e52ee0527fe693ff07b0d6f9cd9088007d9d848d92011d372d528"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At
-              </p>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 col-md-6">
-            <div class="client-box bg-white p-3 text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="client-image">
-                  <img
-                    src="https://img.freepik.com/free-photo/portrait-serious-young-businessman-glasses_1262-3810.jpg?w=900&t=st=1706786229~exp=1706786829~hmac=f950433051282383eccd95967a7de4e0c33ff998fedebd3301988366804871e1"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At
-              </p>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-              <i
-                class="fa fa-star fs-2 text-warning px-2"
-                aria-hidden="true"
-              ></i>
-              <i class="fa fa-star fs-2 text-warning" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------------------------------- Testimonials Section Ended ----------------------------------->
-
+        </section>
+    
+        <!----------------------------------------- Ads Section Ended -------------------------------------->
+    
+ 
+ 
     <!---------------------------------- Newsletter Section Started ----------------------------------->
 
-    <section>
+    <section class="mt-md-0 mt-4">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-8">

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-------------------------------------------- Font Awesome CDN ----------------------------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!---------------------------------------------- IconScout cdn -------------------------------------------->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <!-------------------------------------------- Slik Slider CDN ------------------------------------>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!---------------------------------------- Custom CSS Link ----------------------------------------->
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Vape Dash</title>
+  </head>
+  <body>
+    <!------------------------------------- Navbar Section Started ------------------------------------->
+    <section class="py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="/index.html">VapeDash</a>
+            <button
+              class="navbar-toggler bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-lg-4 px-0"
+                    aria-current="page"
+                    href="#"
+                    >Shop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <form
+                class="d-flex search-bar px-3 border border-1 rounded rounded-pill align-items-center bg-dark"
+              >
+                <input
+                  class="form-control me-2 border-0 text-white bg-transparent"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div>
+                  <a href="#">
+                    <img
+                      src="/assets/images/search-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </form>
+              <button
+                type="button"
+                class="btn rounded rounded-pill custom-btn d-flex justify-content-between gap-4 py-2 mx-lg-4 mx-0 my-lg-0 my-3 px-4"
+              >
+                <div><p class="text-white m-0">New York</p></div>
+                <div>
+                  <img
+                    src="/assets/images/location-on.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </button>
+              <div class="d-flex align-items-center">
+                <div class="user-modal">
+                  <a
+                    class="btn navbar-icon"
+                    data-bs-toggle="modal"
+                    href="#exampleModalToggle"
+                    role="button"
+                  >
+                    <img
+                      src="/assets/images/user-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="navbar-icon pe-1"
+                    ><img
+                      src="/assets/images/heart-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a href="/cart.html" class="navbar-icon ps-2"
+                    ><img
+                      src="/assets/images/cart-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!------------------------------------- Navbar Section Ended --------------------------------------->
+ 
+        <!----------------------------------------- Form Section Started ----------------------------------------->
+
+        <section>
+          <div class="container">
+              <div class="row">
+                  <h2 class="fw-bold text-white mt-5">Get in Touch</h2>
+  
+                  <div class="col-12 col-md-8">
+                      <form action="">
+                          <div class="mb-3">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                  placeholder="Enter message"></textarea>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6 mt-md-4 mt-3">
+                                  <input type="text" placeholder="Enter your name" class="form-control">
+                              </div>
+                              <div class="col-md-6 mt-md-4 mt-3">
+                                  <input type="email" placeholder="Email" class="form-control">
+                              </div>
+                              <div class="mt-md-4 mt-3">
+                                  <input type="text" placeholder="Enter Subject" class="form-control">
+                              </div>
+  
+                              <a href="">
+                                  <button class="btn custom-btn text-white py-2 px-4 text-uppercase mt-5 rounded">
+                                      Send
+                                  </button>
+                              </a>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-3 ">
+                      <div class="d-flex align-items-center gap-4 mt-md-4 mt-4">
+                          <div class="">
+                              <i class="fs-2 text-white gray uil uil-estate"></i>
+                          </div>
+                          <div class="">
+                              <p class="text-white">Johar Town, Lahore</p>
+                              <p class="text-white">Horizam, House No.90</p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-4 mt-md-4 mt-4">
+                          <div class="">
+                              <i class="fs-2 text-white gray uil uil-tablet"></i>
+                          </div>
+                          <div class=" ">
+                              <a href="tel:+923367063952" class="text-white text-decoration-none"> +92 336 706 39 52</a>
+                              <p class="text-white">Mon to Fri 9am to 9pm</p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-4 mt-md-4 mt-4">
+                          <div class="">
+                              <i class="fs-2 text-white gray uil uil-envelope-alt"></i>
+                          </div>
+                          <div class=" ">
+                              <a href="mailto:haseeb7063952@gmail.com" class="text-white text-decoration-none">haseeb7063952@gmail.com</a>
+                              <p class="text-white">Send us your query anytime!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!------------------------------------------ Form Section Ended ------------------------------------------>
+  
+    <!------------------------------------ Footer Section Started ------------------------------------->
+
+    <footer class="bg-dark py-md-4 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <h3 class="fw-bold text-white">VapeDash</h3>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At
+            </p>
+            <div class="d-flex gap-4">
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="/assets/images/facebook-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="/assets/images/instagram-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="/assets/images/twitter-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4 class="fw-bold text-white pt-4">Quick Links</h4>
+            <ul class="list-unstyled py-3">
+              <li>
+                <a href="#" class="text-decoration-none text-white"> Home </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-decoration-none text-white"> Shop </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4 class="fw-bold text-white pt-4">Our Products</h4>
+            <ul class="list-unstyled py-3">
+              <li>
+                <a href="#" class="text-decoration-none text-white">
+                  E liquids
+                </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-decoration-none text-white">
+                  Vape Machine
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white">
+                  Disposables
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4 class="fw-bold text-white pt-4">Support</h4>
+            <ul class="list-unstyled py-3 m-0">
+              <li>
+                <a href="#" class="text-decoration-none text-white">
+                  Contact Us
+                </a>
+              </li>
+              <li class="py-2">
+                <a href="#" class="text-decoration-none text-white">
+                  Return Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white">
+                  Terms of Services
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------------------------------- Footer Section Ended ------------------------------------->
+
+    <!------------------------------------- Profile Modal Started ------------------------------------->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border border-0">
+        
+            <div class="sign-in-blur-bg p-4">
+              <div class="d-flex justify-content-between">
+                <div><h4 class="text-white fw-bold">Login</h4></div>
+                <div>
+                  <a
+                    href="#"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    >
+                    <img src="/assets/images/cross.svg" class="img-fluid cross-image" alt="">
+                    </i
+                  ></a>
+                </div>
+              </div>
+              <p class="text-secondary">
+                Please Login your account to continue
+              </p>
+
+              <div
+                class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+              >
+                <div class="input-group p-2">
+                  <span
+                    class="input-group-text bg-transparent border-0"
+                    id="basic-addon1"
+                  >
+                    <img
+                      src="/assets/images/email-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control bg-transparent border-0 name-shadow text-white"
+                    placeholder="Email"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div
+                class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+              >
+                <div class="input-group p-2">
+                  <span
+                    class="input-group-text bg-transparent border-0"
+                    id="basic-addon1"
+                  >
+                    <img
+                      src="/assets/images/password-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </span>
+                  <input
+                    type="password"
+                    class="form-control bg-transparent border-0 name-shadow text-white"
+                    placeholder="Password"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label
+                  class="form-check-label text-secondary"
+                  for="exampleCheck1"
+                  >Remember me</label
+                >
+              </div>
+              <div class="mt-5">
+                <a href="/profile.html">
+                  <button
+                  type="button"
+                  class="btn rounded rounded-pill custom-btn text-white w-100"
+                >
+                  Login
+                </button>
+                </a>
+              </div>
+              <p class="text-secondary py-2">
+                Didn't have an account?
+                <button
+                  class="btn text-red p-0 login-register-links"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                >
+                Register
+                </button>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+        <div class="modal-content bg-transparent">
+          <div class="sign-in-blur-bg p-4">
+            <div class="d-flex justify-content-between">
+              <div><h4 class="text-white fw-bold">Register</h4></div>
+              <div>
+                <a
+                  href="#"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  >
+                  <img src="/assets/images/cross.svg" class="cross-image" alt="">
+                </a>
+              </div>
+            </div>
+            <p class="text-secondary">
+              Please Sign Up to create your acoount
+            </p>
+            <div
+            class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+          >
+            <div class="input-group p-2">
+              <span
+                class="input-group-text bg-transparent border-0"
+                id="basic-addon1"
+              >
+                <img
+                  src="/assets/images/name-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </span>
+              <input
+                type="text"
+                class="form-control bg-transparent border-0 name-shadow text-white"
+                placeholder="Full Name"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+            <div
+              class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+            >
+            
+              <div class="input-group p-2">
+                <span
+                  class="input-group-text bg-transparent border-0"
+                  id="basic-addon1"
+                >
+                  <img
+                    src="/assets/images/email-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </span>
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-0 name-shadow text-white"
+                  placeholder="Email"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div
+              class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+            >
+              <div class="input-group p-2">
+                <span
+                  class="input-group-text bg-transparent border-0"
+                  id="basic-addon1"
+                >
+                  <img
+                    src="/assets/images/password-icon.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </span>
+                <input
+                  type="password"
+                  class="form-control bg-transparent border-0 name-shadow text-white"
+                  placeholder="Password"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div
+            class="border border-1 mb-2 rounded-pill d-flex justify-content-center align-items-center"
+          >
+            <div class="input-group p-2">
+              <span
+                class="input-group-text bg-transparent border-0"
+                id="basic-addon1"
+              >
+                <img
+                  src="/assets/images/password-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </span>
+              <input
+                type="password"
+                class="form-control bg-transparent border-0 name-shadow text-white"
+                placeholder="Confirm password"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label
+                class="form-check-label text-secondary"
+                for="exampleCheck1"
+                >Remember me</label
+              >
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <button
+                type="button"
+                class="btn rounded rounded-pill custom-btn text-white w-100"
+              >
+                Register
+              </button>
+            </div>
+            <p class="text-secondary py-2">
+              Already have an account?
+             
+              <button
+              class="btn text-red p-0 login-register-links"
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+            Login
+            </button>
+            </p>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  
+    <!-------------------------------------- Profile Modal Ended ------------------------------------->
+
+    <!-------------------------------------- Footer Section Ended ------------------------------------->
+
+
+    <script src="/assets/script/myScript.js"></script>
+
+    <!-- Slick SLider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".slider").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // prevArrow:
+        //   "<h1>hellooooo</h1>",
+        // nextArrow:
+        //   "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

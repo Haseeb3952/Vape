@@ -51,3 +51,12 @@ product_thumbnail.forEach((product) => {
     }, 500);
   });
 });
+
+
+  // JavaScript to initialize the modal
+  $(document).ready(function(){
+    $('#myModal').modal({
+      backdrop: 'static',  // Prevent clicking outside the modal to close it
+      keyboard: false      // Prevent closing the modal with the keyboard
+    });
+  });
